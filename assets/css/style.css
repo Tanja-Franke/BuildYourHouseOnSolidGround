@@ -1,6 +1,86 @@
+/*Google Fonts import*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Dirt&display=swap');
+
 /*override default styles added by the browser*/
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-  }
+}
+
+/*General Styling*/
+body,
+div,
+option {
+    font-family: 'Noto Serif', sans-serif;
+}
+
+header,
+main {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+main {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#instructions {
+    background-color: #9F7E69;
+    justify-content: center;
+}
+
+#open,
+#clue {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#open:hover,
+#clue:hover {
+    color: #fca311;
+}
+
+#showrules,
+#rules,
+#showhints,
+#cue {
+    display: none;
+}
+
+#showrules:checked~#rules,
+#showhints:checked~#cue {
+    display: block;
+}
+
+#category {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#gamearea {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px;
+}
+
+#housecontainer,
+#gamecontainer {
+    border-radius: 20px;
+    border: #525252 solid;
+    text-align: center;
+    flex-direction: column;
+    padding: 30px 20px;
+    justify-content: space-between;
+    width: 100%
+}
+#attempts{
+    padding: 30px 20px;
+    text-align: center;
+}

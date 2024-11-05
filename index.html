@@ -1,11 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Meta tags for search engines-->
+    <meta name="description" content="Interactive game to see whether you build your house on solid ground or not.">
+    <meta name="keywords" content="bible knowledge, the Word of God, characters in the Bible, Jesus, game, 
+     Matthew 7: 24-27, wise and foolish builders">
     <title>Build Your House On Solid Ground!</title>
+    <!--Favicon-->
+    <link rel="shortcut-icon" type="image/x-icon" href="favicon.ico">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    
+    <header>
+        <h1>Build Your House on Solid Ground!</h1>
+    </header>
+    <main>
+        <div class="containers">
+            <div id="instructions">
+                <label for="showrules" id="open" aria-label="show rules">Rules</label>
+                <input type="checkbox" id="showrules" name="howto">
+                <p id="rules">Choose one of the category to start the game. You can win by guessing the right letter to
+                    a
+                    specific word.
+                    But pay attention to not let the house collapsed after some weather condition before guessing the
+                    word
+                    right!
+                </p>
+            </div>
+        </div>
+        <div class="containers">
+            <div id="category">
+                <label for="cat">Choose a category:</label>
+                <select name="category" id="cat">
+                    <option data-category-type="bible-books">Bible Books</option>
+                    <option data-category-type=""="bible-characters">Bible Characters</option>
+                    <option data-category-type=""="bible-events">Bible Events</option>
+                    <option data-category-type=""="names-of-god">Names of God</option>
+                </select>
+            </div>
+        </div>
+        <div id="gamearea">
+            <div id="housecontainer">House</div>
+            <div id="gamecontainer">
+                <div id="search">
+                    <p id="worddisplay"></p>
+                </div>
+                <input type="text" maxlength="1" id="typped-letter">
+                </p>
+                <button onclick="guessLetter()">
+                    Submit
+                </button>
+                <div id="hints">
+                    <label for="showhints" id="clue" aria-label="show hints">
+                        Hints
+                    </label>
+                    <input type="checkbox" id="showhints" name="clue">
+                    <p id="cue">
+                        hints
+                    </p>
+                </div>
+                <form action="index.html">
+                    <input type="submit" value="Return" id="returnbutton">
+                </form>
+            </div>
+        <div>
+        </div>
+        </div>
+        <script src="assets/js/script.js">
+
+        </script>
+        <div id="attempts">
+            <p id="guessesleft">Attempts: n/6</p>
+        </div>
+    </main>
 </body>
 </html>

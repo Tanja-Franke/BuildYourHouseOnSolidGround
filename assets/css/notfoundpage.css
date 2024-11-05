@@ -14,7 +14,7 @@ main {
   }
   
   #wrong {
-    background: url("assets/images/404.jpg") no-repeat center center/cover;
+    background: url("../assets/images/404.jpg") no-repeat center center/cover;
     flex-grow: 1;
     clear: left;
     height: 900px;
